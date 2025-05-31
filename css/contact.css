@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: white;
+}
+
+.bgc {
+    background-color: white;
+}
+
+/* 🔹 Container */
+.container9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px;
+}
+
+/* 🔹 Heading */
+h2 {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Contact Section */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+/* 🔹 Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* 🔹 Contact Details Box */
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.details h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.details p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* 🔹 Experts Section */
+.expert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+.expert-wrapper {
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.expert img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+/* 🔹 Form Inputs */
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    height: 40px;
+    color: black;
+    padding: 10px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* 🔹 Labels */
+form label {
+    font-size: 15px;
+    text-align: left;
+    margin: 5px 0;
+}
+
+/* 🔹 Yes/No Selection Section (Better Look) */
+.customer-check-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 15px 0; */
+    font-size: 14px;
+    /* gap: 15px; */
+}
+
+.customer-check-wrap label {
+    font-size: 16px;
+    /* font-weight: ; */
+    margin-right: 10px;
+}
+
+.customer-check-wrap input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.customer-check-wrap input[type="radio"]:checked {
+    background-color: black;
+    border: 4px solid white;
+    box-shadow: inset 0 0 0 4px black;
+}
+
+/* 🔹 Button */
+button {
+    width: 120px;
+    background: black;
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(63, 59, 59);
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media screen and (max-width: 900px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .details {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .customer-check-wrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .details {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .expert img {
+        width: 70px;
+        height: 70px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
